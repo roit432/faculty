@@ -1,0 +1,451 @@
+/* Main page of about head part */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+}
+
+
+
+
+
+/* header section CSS property  */
+
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    background-color: #000;
+    color: #E8F1F9;
+   
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.login-button{
+    background-color: #F05A28; /* Bright orange */
+    color: hwb(0 100% 0%);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 13px;
+    cursor: pointer;
+    font-size: 1em; /* 16px */
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+.nav-bar{
+    margin-top:10px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+}
+
+.login-button:hover {
+    background-color: #D04A20; /* Darker orange on hover */
+ 
+}
+.auth-options a {
+   color: hsl(0, 43%, 99%);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+/* Navigation Bar */
+.nav-bar ul {
+    display: flex;
+    list-style-type: none;
+    position: relative; /* Enable positioning for the underline */
+}
+
+.nav-bar li {
+    position: relative;
+    margin: 0 10px;
+}
+
+.nav-bar li a {
+    color: #E8F1F9;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-bar li.active a:hover {
+    font-weight: bold;
+    color: #F05A28; /* Bright orange when active */
+}
+
+.nav-bar li.active::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    /* background-color: #F05A28; Bright orange line */
+}
+
+.subscription-button {
+    background-color: #F05A28; /* Bright orange */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem; /* 16px */
+    transition: background-color 0.3s;
+    text-decoration: none; /* Remove underline */
+}
+
+.subscription-button:hover {
+    background-color: #D04A20; /* Darker orange on hover */
+}
+
+
+/* part1 CSS  */
+
+.part1 {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #669999 0%, #000000 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width:100%;
+}
+.top{
+    background-color: transparent;
+}
+/* Header styles */
+.top h1 {
+    text-align: center;
+    color: #ccc;
+    font-size: 3rem;
+    margin-top: 50px;
+    background-color: transparent;
+}
+.top h1:hover{
+    color:white ;
+}
+
+.highlight {
+    color: #fff;
+    /* margin-top: 20px; */
+}
+
+/* About Us button styles at the upper center */
+.about-us-button {
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    margin-top: 10px;
+}
+
+.about-btn {
+    background-color: rgba(9, 4, 29, 0.6);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Image section styles */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 50px;
+    /* margin-bottom: 20px; */
+    opacity: 1;
+   
+}
+
+/* Responsive Styles for medium screens */
+@media (max-width: 768px) {
+    .top h1 {
+        font-size: 2rem;
+    }
+
+    .image-section img {
+        width: 100%;
+    }
+
+    .about-btn {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Responsive Styles for small screens */
+@media (max-width: 480px) {
+    .top h1 {
+        font-size: 1.5rem;
+    }
+
+    .about-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+}
+
+
+
+/* second part of the job card in services */
+.job-cards {
+    font-family: Arial, sans-serif;
+   background-color: #000;
+   color: #333;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+   padding: 20px;
+   /* max-width: 1200px; */
+   margin: 20px auto;
+   width:100%
+}
+
+.job-card {
+   background-color: #1c1e22;
+   color: #fff;
+   border-radius: 8px;
+   padding: 20px;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.job-card h2 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.job-card p {
+   font-size: 1rem;
+   margin-bottom: 20px;
+}
+
+.apply-btn {
+   color: #e76a2f;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.apply-btn:hover {
+   color: #fff;
+   background-color: #e76a2f;
+   padding: 10px;
+   border-radius: 5px;
+   transition: background-color 0.3s;
+}
+
+/* Animation */
+.job-card:hover {
+   transform: scale(1.05);
+   background-color: #333;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+   .job-cards {
+       grid-template-columns: repeat(2, 1fr);
+   }
+
+ 
+
+   .job-card h2 {
+       font-size: 1.3rem;
+   }
+}
+
+@media (max-width: 768px) {
+   .job-cards {
+       grid-template-columns: 1fr;
+   }
+
+  
+
+   .job-card h2 {
+       font-size: 1.2rem;
+   }
+
+   .job-card p {
+       font-size: 0.9rem;
+   }
+
+   .apply-btn {
+       font-size: 0.9rem;
+   }
+}
+
+@media (max-width: 480px) {
+   .job-card {
+       padding: 15px;
+   }
+
+   .job-card h2 {
+       font-size: 1rem;
+   }
+
+   .job-card p {
+       font-size: 0.8rem;
+   }
+
+   .apply-btn {
+       font-size: 0.8rem;
+   }
+
+  
+}
+
+
+
+/* footer section in the about */
+
+
+/* footer section  */
+.footer {
+    margin-bottom:200px  ;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    width:100%;
+    padding:100px;
+    
+    /* padding: 40px 20px; */
+}
+
+.container-footer {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.footer-logo {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.try-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #FF4500;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: fit-content;
+}
+
+.try-button:hover {
+    background-color: #ff5733;
+}
+
+.open-positions {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-section, .navigation-section, .follow-section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+i{
+    padding: 10px ;
+    margin: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .try-button {
+        padding: 8px 15px;
+    }
+
+    .footer-logo {
+        font-size: 1.5em;
+    }
+}
