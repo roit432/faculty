@@ -1,20 +1,19 @@
-/* Main page of about head part */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    background-color: #000;
+    font-family: Arial, sans-serif;
 }
 
-
-
-
-
-/* header section CSS property  */
-
-
+/* Background Style */
+body {
+    background-color: #1A1A1A; /* Dark charcoal gray */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #AAAAAA; /* Medium gray for general text */
+}
 
 /* Header Section */
    /* General Header Styling */
@@ -24,7 +23,7 @@ body{
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #000;
+    background-color: #1A1A1A;
     color: #E8F1F9;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
@@ -148,6 +147,17 @@ body{
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
+/* Sidebar Close Button */
+.sidebar .close-btn {
+    color: #E8F1F9;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+}
+
 
 .sidebar ul {
     list-style-type: none;
@@ -248,225 +258,366 @@ body{
         padding: 8px 16px;
     }
 }
-
-/* part1 CSS  */
-
-.part1 {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to top, #669999 0%, #000000 100%);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    width:100%;
-}
-.top{
-    background-color: transparent;
-}
-/* Header styles */
-.top h1 {
+/* Tagline Section */
+.tagline-section {
+    margin-top: 40px;
     text-align: center;
-    color: #ccc;
-    font-size: 3rem;
-    margin-top: 50px;
-    background-color: transparent;
-}
-.top h1:hover{
-    color:white ;
+    color: #AAAAAA; /* Medium gray for tagline */
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.highlight {
-    color: #fff;
-    /* margin-top: 20px; */
-}
-
-/* About Us button styles at the upper center */
-.about-us-button {
-    position: absolute;
-    top: 1px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    margin-top: 10px;
-}
-
-.about-btn {
-    background-color: rgba(9, 4, 29, 0.6);
-    color: #fff;
-    border: 2px solid #fff;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.about-btn:hover {
-    background-color: #fff;
-    color: #000;
-}
-
-/* Image section styles */
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Welcome Message Section */
+.welcome-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #1A1A1A;
+    margin: 40px 0;
+    border-radius: 10px;
+    width: 80%;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-section:hover{
+    background-color: #000;
+}
+
+/* Light glow effect */
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* Specific Text Styling */
+.welcome-section h2 {
+    color: #FFFFFF; /* White color for 'Welcome to' */
+    font-size: 2em;
+}
+
+.welcome-section h2 span {
+    color: #E8F1F9; /* Gray-blue color for 'Facultypaths' */
+}
+
+.welcome-section p {
+    color: #AAAAAA; /* Medium gray */
+    font-size: 1.2em; /* 19.2px */
+    margin: 10px 0 20px;
+}
+
+.join-now {
+    padding: 10px 20px;
+    background-color: #F05A28; /* Bright orange */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em; /* 16px */
+    transition: background-color 0.3s;
+}
+
+.join-now:hover {
+    background-color: #D04A20; /* Darker orange on hover */
+}
+#about-us  {
+    text-align: center;
+    padding: 40px;
+    background-color: #1A1A1A;
+    margin: 40px 0;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#about-us:hover{
+  background-color: #000;
+}
+
+#about-us h2 {
+    color: #E8F1F9; /* Light gray-blue for "Who" */
+    font-size: 2em; /* Font size for heading */
+}
+
+#about-us h2 span {
+    color: #AAAAAA; /* Gray for "We Are" */
+}
+
+#about-us p {
+    color: #AAAAAA; /* Medium gray for paragraph text */
+    font-size: 1.2em; /* Font size for paragraphs */
+    text-align: justify; /* Justify text alignment */
+    margin: 20px 0; /* Margin for spacing between paragraphs */
+}
+/* Main Section with Full-Width White Background */
+#our-services {
+    background-color: #FFFFFF; /* Full white background from this section */
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%; /* Ensure it spans the full width of the page */
+    box-sizing: border-box; /* Make padding included in the width */
+}
+
+/* Headings and Subheadings */
+#our-services h2 {
+    color: #000000; /* Black color for "What" */
+    font-size: 2em;
+    font-weight: bold; /* Make the main heading bold */
+}
+
+#our-services h2 span {
+    color: #AAAAAA; /* Blue-gray color for "We Do" */
+    font-weight: bold; /* Make "We Do" bold */
+}
+
+#our-services p {
+    font-size: 1.2em;
+    color: #AAAAAA; /* Change paragraph color to white */
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.learn-more-btn {
+    background-color: #F05A28; /* Bright orange button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.learn-more-btn:hover {
+    background-color: #D04A20; /* Darker orange on hover */
+}
+
+/* Flexbox Styling for Service Boxes */
+.services-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping into multiple rows */
+    justify-content: space-between; /* Creates gaps between the service boxes */
+    align-items: flex-start; /* Aligns items to the top */
+    max-width: 1200px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
     
 }
-
-.image-section img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 50px;
-    /* margin-bottom: 20px; */
-    opacity: 1;
-   
+ /* img{
+    height: 100px;
+    width:100px;
+    
+} */
+.only-services img{
+    width:100%;
 }
 
-/* Responsive Styles for medium screens */
+/* Service Box Styling */
+.service-box {
+    background-color: #1A1A1A; /* Dark charcoal gray */
+    border-radius: 10px; /* Rounded corners for the service box */
+    padding: 20px;
+    color: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: left;
+
+    /* Flex item sizing */
+    flex: 0 1 48%; /* Two boxes per row with some margin */
+    margin-bottom: 20px; /* Space between rows */
+}
+
+/* Service Box Content */
+.service-box h3 {
+    color: white; /* White for main heading */
+    font-weight: bold; /* Make heading bold */
+}
+
+.service-box .tagline {
+    font-style: italic;
+    color: #FFFFFF; /* Change tagline color to white */
+    font-weight: bold; /* Make tagline bold */
+    margin-bottom: 10px;
+}
+
+.service-box .description {
+    color: #FFFFFF; /* White color for paragraph */
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.service-box img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-top: 10px; /* Margin to separate from the content above */
+    margin-bottom: -20px; /* Pull the image down to align with the bottom of the box */
+    /* clip-path: circle(50%); */
+}
+
+/* Learn More Button in Service Box */
+.learn-more-box {
+    background-color: #F05A28;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px; /* Add margin to separate from the image */
+}
+
+.learn-more-box:hover {
+    background-color: #D04A20;
+}
+
+/* Responsive Design for Service Boxes */
 @media (max-width: 768px) {
-    .top h1 {
-        font-size: 2rem;
-    }
-
-    .image-section img {
-        width: 100%;
-    }
-
-    .about-btn {
-        font-size: 1rem;
-        padding: 8px 15px;
+    .service-box {
+        flex: 1 1 100%; /* Stack the boxes on smaller screens */
     }
 }
-
-/* Responsive Styles for small screens */
-@media (max-width: 480px) {
-    .top h1 {
-        font-size: 1.5rem;
-    }
-
-    .about-btn {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-    }
-}
-
-
-
-/* second part of the job card in services */
-.job-cards {
+body {
     font-family: Arial, sans-serif;
-   background-color: #000;
-   color: #333;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   gap: 20px;
-   padding: 20px;
-   /* max-width: 1200px; */
-   margin: 20px auto;
-   width:100%
 }
 
-.job-card {
-   background-color: #1c1e22;
-   color: #fff;
-   border-radius: 8px;
-   padding: 20px;
-   transition: transform 0.3s ease, background-color 0.3s ease;
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between boxes */
+    margin: 20px; /* Margin around the container */
 }
 
-.job-card h2 {
-   font-size: 1.5rem;
-   margin-bottom: 10px;
+.box {
+    flex: 1; /* Allow boxes to grow equally */
+    background-color: #f0f8ff; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left; /* Left align text */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
+    height: 500px; /* Set height to 500px */
 }
 
-.job-card p {
-   font-size: 1rem;
-   margin-bottom: 20px;
+.box:hover {
+    transform: translateY(-5px); /* Move the box slightly up on hover */
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue background effect on hover */
 }
 
-.apply-btn {
-   color: #e76a2f;
-   text-decoration: none;
-   font-weight: bold;
+.box-header {
+    font-size: 2em; /* Larger font for the number */
+    font-weight: bold;
+    background-color: #FF5722; /* Orange for number box */
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 20px; /* Remove top margin to align with content */
+    float: left; /* Align to the left */
 }
 
-.apply-btn:hover {
-   color: #fff;
-   background-color: #e76a2f;
-   padding: 10px;
-   border-radius: 5px;
-   transition: background-color 0.3s;
+.box-content h3 {
+    font-size: 1.5em; /* Larger font for headings */
+    margin: 10px 0; /* Add margin for spacing */
+    color: black; /* Ensure heading is black */
 }
 
-/* Animation */
-.job-card:hover {
-   transform: scale(1.05);
-   background-color: #333;
+.box-content .tagline {
+    font-weight: bold; /* Bold tagline */
+    font-size: 1.2em; /* Larger font size for tagline */
+    color: black; /* Ensure tagline is black */
+    margin: 10px 0; /* Add margin for spacing */
 }
 
-/* Responsive Media Queries */
-@media (max-width: 1024px) {
-   .job-cards {
-       grid-template-columns: repeat(2, 1fr);
-   }
+.box-content p {
+    color:black; /* Slightly lighter text for description */
+    margin: 15px 0; /* Add margin for spacing between paragraphs */
+}
 
- 
-
-   .job-card h2 {
-       font-size: 1.3rem;
-   }
+ul {
+    padding-left: 20px; /* Indent for list items */
+    margin: 10px 0; /* Add margin for spacing */
 }
 
 @media (max-width: 768px) {
-   .job-cards {
-       grid-template-columns: 1fr;
-   }
+    .box-container {
+        flex-direction: column; /* Stack boxes on smaller screens */
+    }
+}
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+} */
 
-  
-
-   .job-card h2 {
-       font-size: 1.2rem;
-   }
-
-   .job-card p {
-       font-size: 0.9rem;
-   }
-
-   .apply-btn {
-       font-size: 0.9rem;
-   }
+.get-started-section {
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+    min-height: 100px; /* Adjusted height */
 }
 
-@media (max-width: 480px) {
-   .job-card {
-       padding: 15px;
-   }
-
-   .job-card h2 {
-       font-size: 1rem;
-   }
-
-   .job-card p {
-       font-size: 0.8rem;
-   }
-
-   .apply-btn {
-       font-size: 0.8rem;
-   }
-
-  
+.main-heading {
+    font-size: 2.5em; /* Large font size for the main heading */
+    color:gray; /* For "GET STARTED" */
+    margin: 0; /* No margin for centering */
 }
 
+.main-heading span {
+    color: white; /* For "WITH FACULTYPATHS" */
+}
 
+.button-container {
+    margin: 20px 0;
+}
 
-/* footer section in the about */
+.btn {
+    background-color: orange; /* Button background */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    padding: 15px 30px; /* Button padding */
+    font-size: 1.2em; /* Button font size */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
 
+.btn:hover {
+    background-color: darkorange; /* Darker shade on hover */
+}
 
+.image-container {
+    margin-top: 30px; /* Spacing between heading and image */
+}
+
+.alt-image {
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Maintain aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2em; /* Adjust heading size for smaller screens */
+    }
+
+    .alt-image {
+        width: 80%; /* Adjust image size for smaller screens */
+    }
+
+    .btn {
+        font-size: 1em; /* Adjust button size for smaller screens */
+    }
+}
 /* footer section  */
 .footer {
     margin-bottom:200px  ;
