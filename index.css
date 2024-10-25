@@ -147,6 +147,17 @@ body {
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
+/* Sidebar Close Button */
+.sidebar .close-btn {
+    color: #E8F1F9;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+}
+
 
 .sidebar ul {
     list-style-type: none;
