@@ -8,7 +8,8 @@
 
 /* Background Style */
 body {
-    background-color: #1A1A1A; /* Dark charcoal gray */
+    background-color: #1A1A1A; 
+    /* Dark charcoal gray */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,6 +147,7 @@ body {
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    
 }
 /* Sidebar Close Button */
 .sidebar .close-btn {
@@ -405,8 +407,9 @@ body {
     flex-wrap: wrap; /* Allows wrapping into multiple rows */
     justify-content: space-between; /* Creates gaps between the service boxes */
     align-items: flex-start; /* Aligns items to the top */
-    max-width: 1200px; /* Max width for the container */
+    max-width: 700px; /* Max width for the container */
     margin: 0 auto; /* Center the container */
+    text-align: center;
     
 }
  /* img{
@@ -416,21 +419,22 @@ body {
 } */
 .only-services img{
     width:100%;
+   
 }
 
 /* Service Box Styling */
 .service-box {
     background-color: #1A1A1A; /* Dark charcoal gray */
     border-radius: 10px; /* Rounded corners for the service box */
-    padding: 20px;
+    padding-bottom: 5px;
     color: #FFFFFF;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     position: relative;
-    text-align: left;
+    text-align: center;
 
     /* Flex item sizing */
     flex: 0 1 48%; /* Two boxes per row with some margin */
-    margin-bottom: 20px; /* Space between rows */
+    margin-bottom: 15px; /* Space between rows */
 }
 
 /* Service Box Content */
@@ -453,9 +457,11 @@ body {
 
 /* Image Styling */
 .service-box img {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px; /* Rounded corners for the image */
+    padding-bottom: 10px;
+    /* width: 300px; */
+    height: 290px;
+    /* border-radius: 10px; */
+     /* Rounded corners for the image */
     margin-top: 10px; /* Margin to separate from the content above */
     margin-bottom: -20px; /* Pull the image down to align with the bottom of the box */
     /* clip-path: circle(50%); */
@@ -560,10 +566,10 @@ ul {
 } */
 
 .get-started-section {
-    padding: 100px 20px;
+    padding: 50px 5px;
     position: relative;
     text-align: center;
-    min-height: 100px; /* Adjusted height */
+    min-height: 50px; /* Adjusted height */
 }
 
 .main-heading {
@@ -600,8 +606,9 @@ ul {
 }
 
 .alt-image {
-    width: 300px; /* Adjust width as needed */
-    height: 300px; /* Maintain aspect ratio */
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Maintain aspect ratio */
+  
 }
 
 /* Responsive design for smaller screens */
@@ -626,7 +633,7 @@ ul {
     background-color: #f4f4f4;
     color: #333;
     width:100%;
-    padding:100px;
+    padding:50px;
     
     /* padding: 40px 20px; */
 }
