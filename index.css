@@ -607,7 +607,8 @@ ul {
 
 .alt-image {
     width: 100px; /* Adjust width as needed */
-    height: 100px; /* Maintain aspect ratio */
+/*     height: 100px;*/
+    /* Maintain aspect ratio */ 
   
 }
 
