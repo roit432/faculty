@@ -1,4 +1,4 @@
- /* Main page of about head part */
+/* Main page of about head part */
 * {
     margin: 0;
     padding: 0;
@@ -247,8 +247,100 @@
 }
 
 
-/* part1 CSS  */
+/* Base styles for larger devices (desktop) */
+#about-us {
+    text-align: center;
+    padding: 40px;
+    background-color: #1A1A1A;
+    margin: 50px auto; /* Center horizontally */
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
+#about-us:hover {
+    background-color: #000;
+}
+
+#about-us h2 {
+    color: #E8F1F9;
+    font-size: 2em;
+}
+
+#about-us h2 span {
+    color: #AAAAAA;
+}
+
+#about-us p {
+    color: #AAAAAA;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+/* Media query for tablets (768px to 1024px) */
+@media (max-width: 1024px) {
+    #about-us {
+        width: 90%;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-us h2 {
+        font-size: 1.8em;
+    }
+
+    #about-us p {
+        font-size: 1.1em;
+    }
+}
+
+/* Media query for mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    #about-us {
+        width: 95%;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-us h2 {
+        font-size: 1.6em;
+    }
+
+    #about-us p {
+        font-size: 1em;
+    }
+}
+
+/* Media query for small mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    #about-us {
+        width: 95%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #about-us h2 {
+        font-size: 1.4em;
+    }
+
+    #about-us p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+/* part1 CSS  */
+/* 
 .part1 {
     font-family: Arial, sans-serif;
     background: linear-gradient(to top, #669999 0%, #000000 100%);
@@ -262,9 +354,9 @@
 }
 .top{
     background-color: transparent;
-}
+} */
 /* Header styles */
-.top h1 {
+/* .top h1 {
     text-align: center;
     color: #ccc;
     font-size: 3rem;
@@ -277,10 +369,10 @@
 
 .highlight {
     color: #fff;
-    /* margin-top: 20px; */
+     margin-top: 20px; 
 }
 
-/* About Us button styles at the upper center */
+/* About Us button styles at the upper center 
 .about-us-button {
     position: absolute;
     top: 1px;
@@ -306,7 +398,7 @@
     color: #000;
 }
 
-/* Image section styles */
+Image section styles
 .content {
     display: flex;
     flex-direction: column;
@@ -320,12 +412,12 @@
     width: 100%;
     border-radius: 10px;
     margin-top: 50px;
-    /* margin-bottom: 20px; */
+     margin-bottom: 20px; 
     opacity: 1;
    
 }
 
-/* Responsive Styles for medium screens */
+Responsive Styles for medium screens
 @media (max-width: 768px) {
     .top h1 {
         font-size: 2rem;
@@ -341,7 +433,7 @@
     }
 }
 
-/* Responsive Styles for small screens */
+Responsive Styles for small screens
 @media (max-width: 480px) {
     .top h1 {
         font-size: 1.5rem;
@@ -351,7 +443,7 @@
         font-size: 0.9rem;
         padding: 6px 12px;
     }
-}
+} */
 
 /* CSS of the Part second */
 .part2 {
@@ -467,19 +559,20 @@
 
 /* team section CSS property */
 
+/* .part3 {
+    font-family: Arial, sans-serif; */
 
-.part3 {
-    font-family: Arial, sans-serif;
     /* background: linear-gradient(to top, #669999 0%, #000000 100%); */
-    background-color: #fff;
+    /*   background-color: #fff;
     color: #333;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
+  
 
 /* Leaders Button */
-.leaders-btn {
+/* .leaders-btn {
     display: flex;
     justify-content: center;
     margin: 20px 0;
@@ -507,10 +600,11 @@
     color:#ccc;
     font-style: italic;
 }
+ */
 
 
 /* Meet the Team Section */
-.team-section {
+/* .team-section {
     text-align: center;
     margin: 50px 0;
 }
@@ -524,9 +618,10 @@
     font-weight: bold;
     color: #111;
 }
+ */
 
 /* Team Grid */
-.team-grid {
+/*.team-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
@@ -534,10 +629,11 @@
     justify-content: center;
     aspect-ratio:4px/2px;
 
-}
+}  */
+
 
 /* Team Member Box */
-.team-member {
+/*.team-member {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -553,10 +649,11 @@
 
 .team-member img:hover {
     transform: scale(1.05);
-}
+}  */
+
 
 /* Responsive Layout */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .team-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -577,10 +674,12 @@
         font-size: 0.9rem;
     }
 }
+ */
 
 
 /* part4 CSS  property other team members introduction */
    /* General Styles */
+   /*  
    .part4 {
     background-color: #0a0a0a;
     font-family: 'Arial', sans-serif;
@@ -598,10 +697,10 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-}
+}*/
 
 /* Title Styling */
-.title-1 {
+/* .title-1 {
     font-size: 48px;
     font-weight: 400;
     color: #e1e1e1;
@@ -611,23 +710,25 @@
 .title-1 span {
     font-weight: 300;
     color: #d6d6d6;
-}
+} */
+
 
 /* Team Grid Layout */
-.team-g {
+/* .team-g {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     width: 100%;
-}
+} */
+
 
 /* Team Member Card Styling */
-.team-emp {
+/* .team-emp {
     background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
-    padding: 20px;
+ /*   padding: 20px;
     border-radius: 10px;
     backdrop-filter: blur(10px); /* Optional: Adds a glassmorphism effect */
-    transition: transform 0.3s, background-color 0.3s;
+  /*  transition: transform 0.3s, background-color 0.3s;
 }
 
 .team-emp h2 {
@@ -650,18 +751,21 @@
 }
 
 /* Hover effect */
+/*
 .team-emp:hover {
     transform: scale(1.05);
     background-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+    /*
 }
 .team-2{
     color: #ccc;
     font-size: 3rem;
     margin-top: 50px;
 
-}
+}  */
 
 /* Responsive Design */
+/*  
 @media (max-width: 900px) {
     .team-g {
         grid-template-columns: 1fr 1fr;
@@ -683,6 +787,7 @@
         margin-bottom: 20px;
     }
 }
+ */
 
 /* footer section in the about */
 
