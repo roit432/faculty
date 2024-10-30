@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="aman6.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <h1>Edit Service</h1>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn ">Basic details</button>
+            <button class="tab-btn">Advanced</button>
+            <button class="tab-btn">Share</button>
+        </nav>
+
+        <section class="service-card">
+            <div class="card">
+                <div class="card-left">
+                    <p><i class="fas fa-calendar-day" ></i> Mon, 22 Jul</p>
+                    <p><i class="fas fa-clock"></i> 08:00 PM - 09:00 PM IST</p>
+                </div>
+                <div class="card-name"><h2>alpha</h2></div>
+                
+                <div class="card-right">
+                    <img src="fp.jpg.jpeg" alt="Profile Image">
+                </div>
+                <div class="card-center">
+                    
+                    <p>Checkout my offerings and book a slot at -> topmate.io/yashdixit</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer-actions">
+            <button class="copy-btn"><i class="fas fa-copy"></i> Copy service link</button>
+            <button class="share-btn"><i class="fas fa-share"></i> Share</button>
+        </section>
+    </div>
+
+    <script >// JavaScript to switch between tabs
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+            });
+        });
+        </script>
+</body>
+</html>
