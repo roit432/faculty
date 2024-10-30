@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Schedule</title>
+    <link rel="stylesheet" href="avail.css">
+</head>
+<body>
+    <div class="container1">
+        <h1>Availability</h1>
+        
+        <div class="tab-buttons">
+            <button class="tab-btn active">Calendar</button>
+            <button class="tab-btn">Schedule</button>
+        </div>
+        
+        <div class="availability-section">
+            <div class="availability-schedule">
+                <div class="schedule-header">
+               <button class="default">Default</button>
+                    <button class="new-schedule-btn">+ New Schedule</button>
+                </div>
+                <div class="container">
+                <button class="save-button">Save</button>
+                <div class="day-schedule">  
+                   
+                    <label><input type="checkbox" id="checked">Monday </label>
+                    <select class="time">
+                        <option>6:30 PM</option>
+                    </select>
+                    <span>-</span>
+                    <select class="time">
+                        <option>11:30 PM</option>
+                    </select>
+                   
+                </div>
+
+                <div class="day-schedule">
+                    <label><input type="checkbox" checked> Tuesday</label>
+                    <select class="time">
+                        <option>6:30 PM</option>
+                    </select>
+                    <span>-</span>
+                    <select class="time" >
+                        <option>11:30 PM</option>
+                    </select>
+                </div>
+
+                <div class="day-schedule">
+                    <label><input type="checkbox" checked> Wednesday</label>
+                    <select class="time">
+                        <option>6:30 PM</option>
+                    </select>
+                    <span>-</span>
+                    <select class="time">
+                        <option>11:30 PM</option>
+                    </select>
+                </div>
+
+                <div class="day-schedule">
+                    <label><input type="checkbox" checked> Thursday</label>
+                    <select class="time">
+                        <option>6:30 PM</option>
+                    </select>
+                    <span>-</span>
+                    <select class="time">
+                        <option>11:30 PM</option>
+                    </select>
+                </div>
+
+                <div class="day-schedule">
+                    <label><input type="checkbox"> Friday</label>
+                    <span>Unavailable</span>
+                </div>
+
+                <div class="day-schedule">
+                    <label><input type="checkbox" checked> Saturday</label>
+                    <select class="time">
+                        <option>6:30 PM</option>
+                    </select>
+                    <span>-</span>
+                    <select class="time">
+                        <option>11:30 PM</option>
+                    </select>
+                </div>
+
+                <div class="day-schedule">
+                    <label><input type="checkbox" checked> Sunday</label>
+                    <select class="time">
+                        <option>6:30 PM</option>
+                    </select>
+                    <span>-</span>
+                    <select class="time">
+                        <option>11:30 PM</option>
+                    </select>
+                </div>
+                <button class="apply-button"><b>Apply to All</b></button>
+                </div>
+               
+              
+            </div>
+
+            <div class="block-dates">
+                <h3>Block dates</h3>
+                <p>Add dates when you will be unavailable to take calls</p>
+                <button class="add-dates-button">Add unavailable dates</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

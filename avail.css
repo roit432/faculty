@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+.container1 {
+    border: 1px solid #ddd;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Large screens (desktops) */
+@media (max-width: 1200px) {
+    .container1 {
+        max-width: 1000px;
+        padding: 18px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .container1 {
+        max-width: 750px;
+        padding: 16px;
+    }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 768px) {
+    .container1 {
+        max-width: 95%;
+        padding: 14px;
+    }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 576px) {
+    .container1 {
+        max-width: 95%;
+        padding: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for small screens */
+    }
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.tab-buttons {
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+}
+
+.tab-btn {
+    border: gray 1px solid;
+    padding: 10px 30px;
+    background-color: #f2eded;
+    color: #0b0b0b;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px; /* Adds vertical spacing when buttons wrap */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adds a smooth color transition */
+}
+
+.tab-btn.active {
+    background-color: #f4eded;
+    color: #0b0b0b;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .tab-btn {
+        padding: 8px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 768px) {
+    .tab-btn {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+    .tab-buttons {
+        justify-content: center; /* Centers buttons on small screens */
+    }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 576px) {
+    .tab-btn {
+        padding: 6px 15px;
+        font-size: 0.85rem;
+        margin-left: 5px;
+        border-radius: 15px;
+    }
+}
+
+
+.availability-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.availability-schedule {
+    flex: 1 1 60%;
+}
+.schedule-header {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    margin-bottom: 20px;
+    justify-content: space-between; /* Helps with layout on smaller screens */
+}
+
+/* Styling for .default and .new-schedule-btn */
+.default, .new-schedule-btn {
+    padding: 9px 15px;
+    font-size: 1rem;
+    border: none;
+}
+
+.default {
+    background-color: #ced1d3;
+    margin-left: 20px;
+}
+
+.new-schedule-btn {
+    background-color: #eef1f4;
+    color: #080808;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.container {
+    width: auto;
+    border: 1px solid #ddd;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.day-schedule {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.day-schedule label {
+    flex: 1;
+}
+
+.time {
+    border: gray 1px solid;
+    padding: 10px 80px;
+    margin: 0 30px;
+}
+
+.apply-button {
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #279713;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.save-button {
+    padding: 8px 16px;
+    margin-bottom: 30px;
+    margin-left: 700px; /* Can be adjusted in media queries */
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+}
+
+.block-dates {
+    flex: 1 1 35%;
+    padding: 20px;
+    position: relative;
+    background-color: #fbfafa;
+    border: 1px solid #ddd;
+    float: right;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    height: 250px;
+}
+
+.add-dates-button {
+    padding: 8px 80px;
+    border: 1px solid #080808;
+    background-color: #f6f2f2;
+    color: #333;
+    border-radius: 4px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+    .day-schedule {
+        flex-direction: column; /* Stacks elements vertically */
+        padding: 15px;
+    }
+
+    .time {
+        padding: 10px 40px; /* Reduced padding */
+        margin: 10px 0; /* Adjust margin for stacked layout */
+    }
+
+    .apply-button {
+        font-size: 16px; /* Slightly smaller font */
+    }
+
+    .save-button {
+        margin-left: 0; /* Reset left margin */
+        width: 100%; /* Full width for button */
+        text-align: center; /* Center text */
+    }
+
+    .block-dates {
+        flex: 1 1 100%; /* Full width for block dates */
+        margin-top: 30px; /* Adjust margin */
+        height: auto; /* Auto height */
+    }
+
+    .add-dates-button {
+        padding: 8px 60px; /* Reduced padding */
+    }
+}
+
+/* Small screens (large phones) */
+@media (max-width: 768px) {
+    .day-schedule {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .time {
+        padding: 8px 20px; /* Further reduced padding */
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+
+    .apply-button,
+    .save-button {
+        font-size: 14px; /* Smaller font size */
+        padding: 6px 12px; /* Smaller padding */
+    }
+
+    .block-dates {
+        height: auto; /* Set to auto height */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .add-dates-button {
+        padding: 8px 40px; /* Further reduced padding */
+    }
+}
+
+/* Extra small screens (small phones) */
+@media (max-width: 576px) {
+    .day-schedule {
+        margin-bottom: 20px; /* Adjust bottom margin */
+    }
+
+    .apply-button,
+    .save-button {
+        width: 100%; /* Full width for buttons */
+        margin-bottom: 10px; /* Adjust bottom margin */
+    }
+
+    .time {
+        width: 100%; /* Full width for time input */
+        padding: 6px 10px; /* Further reduced padding */
+        margin: 5px 0; /* Adjust margin */
+    }
+
+    .block-dates {
+        margin-top: 10px; /* Adjust top margin */
+    }
+
+    .add-dates-button {
+        padding: 8px 30px; /* Further reduced padding */
+    }
+}
+
+
+
