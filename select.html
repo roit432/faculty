@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Session</title>
+    <link rel="stylesheet" href="select.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+            <h1>What are you creating today?</h1>
+        </header>
+
+        <section class="type-selection">
+            <h2>Select type</h2>
+            <div class="options">
+                <div class="option "><i class="fas fa-video"></i><b>1:1 Call</b></div>
+                <div class="option"><i class="fas fa-envelope"></i> <b>Priority DM</b></div>
+                <div class="option"><i class="fas fa-chalkboard-teacher"></i><b> Webinar</b></div>
+                <div class="option"><i class="fas fa-box"></i> <b>Digital Product</b></div>
+                <div class="option"><i class="fas fa-cubes"></i><b> Package</b></div>
+            </div>
+        </section>
+
+        <form class="creation-form">
+            <label for="title" style="margin-top: 20px;">Title</label>
+            <input type="text" id="title" placeholder="Enter title here" required>
+
+            <label for="duration">Duration (mins)</label>
+            <input type="number" id="duration" placeholder="60" required>
+
+            <label for="session-date">Session</label>
+            <input type="date" id="session-date" required>
+            <input type="time" id="session-time" required>
+
+            <button class="multi-session-btn" type="button">+ Create multiple sessions</button>
+
+            <label for="amount">Amount (₹)</label>
+            <input type="number" id="amount" placeholder="0" required>
+
+            <label for="hosting-link">Hosting options</label>
+            <input type="url" id="hosting-link" placeholder="https://www.link.com/meeting-link" required>
+
+            <button type="submit" class="next-btn"><a href="aman5.html" style="color:white; text-decoration: none;">Next: Customization</a></button>
+        </form>
+    </div>
+</body>
+</html>

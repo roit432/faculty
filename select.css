@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Style for the back button icon */
+.back-btn i {
+    margin-right: 5px;
+}
+
+/* Style for the option icons */
+.option i {
+    margin-right: 8px;
+}
+
+/* Adjust font size and alignment */
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.type-selection {
+    margin-bottom: 20px;
+}
+
+.type-selection h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.option {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.option.active,
+.option:hover {
+    border-color: #333;
+    background-color: #f0f0f0;
+}
+
+.container .creation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="url"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.multi-session-btn,
+.next-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.multi-session-btn {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.next-btn:hover,
+.multi-session-btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Queries for different devices */
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+    }
+
+    .options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .option {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .creation-form {
+        gap: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"],
+    input[type="url"] {
+        font-size: 14px;
+    }
+
+    .multi-session-btn,
+    .next-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .option {
+        justify-content: flex-start;
+        padding: 15px;
+    }
+    
+    .multi-session-btn {
+        width: 100%;
+    }
+}
