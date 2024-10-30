@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topmate Profile Page</title>
+    <link rel="stylesheet" href="topmate.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="fp.jpg.jpeg" alt="Profile Photo" class="profile-photo">
+            <span class="edit-photo">Change Photo</span>
+        </header>
+        
+        <form>
+            <label for="topmate-link">Your topmate page link</label>
+            <div class="link-input">
+                <input type="text" id="topmate-link" placeholder="topmate.io/" value="Kavya Savita">
+                <input  type="checkbox" style="margin-left: 520px;">
+            </div>
+            
+            <div class="name-fields">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" value="Yash">
+                </div>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" value="Dixit">
+                </div>
+            </div>
+
+            <label for="display-name">Display Name</label>
+            <input type="text" id="display-name" value="Yash Dixit">
+            
+            <label for="intro" >Your topmate intro</label>
+            <input type="text" id="intro" value="Product Manager | Business Sense & Strategic Planning Skills | User Centricity & Value Proposition Mindset" style="padding: 30px;">
+
+            <label for="about">About yourself</label>
+            <textarea id="about" style="padding: 80px;">With 4+ years of experience, looking for user-centric and value propositional role...</textarea>
+        </form>
+        <div>
+            <!-- Website Widget Section -->
+            <section class="widget-section">
+                <h2>Website Widget</h2>
+                <div class="widget-content">
+                    <div class="widget-icon">
+                        <img src="https://images4.alphacoders.com/115/thumb-1920-115716.jpg" alt="Widget Icon">
+                    </div>
+                    <div class="widget-text">
+                        <p>Embed topmate on your website in <strong>under 1 minute</strong></p>
+                        <button>Generate ➔</button>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Display Section -->
+            <section class="display-section">
+                <h2>Display</h2>
+                <div class="display-item">
+                    <p><b>Profile theme</b></p>
+                    <span class="theme-color"></span>
+                    <a href="#">Edit</a>
+                </div>
+                <p class="display-desc">Customize your profile to your brand</p>
+                <div class="display-item">
+                    <p><b>Service order</b></p>
+                    <a href="#">Edit</a>
+                </div>
+                <p class="display-desc">Arrange services as you would like to display on your page</p>
+            </section>
+    
+            <!-- Social Links Section -->
+            <section class="social-links">
+                <h2>Social Links</h2>
+                <div class="social-link-item">
+                    <select>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="linkedin">Instagram</option>
+                        <option value="linkedin">xyz</option>
+                        <!-- Add more options here -->
+                    </select>
+                    <input type="url" value="https://www.linkedin.com/in/yashdixit001">
+                    <button class="remove-link">✕</button>
+                </div>
+                <button class="add-social-link">+ Add social link</button>
+            </section>
+    
+            <!-- Logout Button -->
+            <button class="logout-btn">Logout</button>
+        </div>
+    </div>
+    
+            
+</body>
+</html>
