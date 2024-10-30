@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="details.css">
+</head>
+<body>
+    
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <nav class="profile-nav">
+            <button class="nav-btn">Checkout</button>
+            <button class="nav-btn">Profile</button>
+            <button class="nav-btn ">Account</button>
+        </nav>
+        <hr>
+
+        <section class="profile-content">
+            
+            <img src="fp.jpg.jpeg" alt="Profile" class="profile-pic">
+           
+
+            <div class="section">
+                <h3>Your details</h3>
+                <div class="detail-item">
+                    <p>Email address</p>
+                    <span>eryoshdata@gmail.com</span>
+                    <a href="#" class="edit-link">Edit</a>
+                </div>
+                <hr>
+                <div class="detail-item">
+                    <p>Mobile number</p>
+                    <span>+97165798543</span>
+                    <a href="#" class="edit-link">Edit</a>
+                </div>
+                <hr>
+                <div class="detail-item">
+                    <p>Password</p>
+                    <span>********</span>
+                    <a href="#" class="edit-link">Edit</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="section">
+                <h3>Notifications</h3>
+                <div class="detail-item">
+                    <p>Booking notifications</p>
+                    <span>On: Email, Whatsapp</span>
+                    <a href="#" class="edit-link">Edit</a>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <div class="help-section">
+                <p>Do you need help with your account settings? <a href="#">Send a query</a></p>
+                <button class="delete-btn">Delete Account</button>
+            </div>
+        </section>
+    </div>
+    <script>document.querySelector('.delete-btn').addEventListener('click', function() {
+        const confirmation = confirm("Are you sure you want to delete your account?");
+        if (confirmation) {
+            alert("Your account has been deleted.");
+        }
+    });
+    </script>
+</body>
+</html>
