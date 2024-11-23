@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #AAAAAA; /* Medium gray for general text */
+    color: #ffffff; /* Medium gray for general text */
 }
 
 /* Header Section */
@@ -24,8 +24,8 @@ body {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #1A1A1A;
-    color: #E8F1F9;
+    background-color:  #2f6995;
+    color: #E8F8fa;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
@@ -37,7 +37,7 @@ body {
 
 .logo {
     height: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
     border-radius: 50%;
 }
 
@@ -54,7 +54,7 @@ body {
 
 /* Login Button */
 .login-button {
-    background-color: #F05A28; /* Bright orange */
+    background-color: #003366; /* Bright orange */
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
@@ -66,7 +66,7 @@ body {
 }
 
 .login-button:hover {
-    background-color: #D04A20; /* Darker orange on hover */
+    background-color: #87ceeb; /* Darker orange on hover */
 }
 
 /* Navigation Bar */
@@ -91,7 +91,7 @@ body {
 
 .nav-bar li.active a {
     font-weight: bold;
-    color: #F05A28; /* Bright orange when active */
+    color: #003366; /* Bright orange when active */
 }
 
 .nav-bar li.active::after {
@@ -101,12 +101,12 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background-color: #F05A28; /* Bright orange line */
+    background-color: #003366; /* Bright orange line */
 }
 
 /* Subscription Button */
 .subscription-button {
-    background-color: #F05A28; /* Bright orange */
+    background-color: #003366; /* Bright orange */
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
@@ -118,7 +118,7 @@ body {
 }
 
 .subscription-button:hover {
-    background-color: #D04A20; /* Darker orange on hover */
+    background-color: #87ceeb; /* Darker orange on hover */
 }
 
 /* Sidebar Styling */
@@ -317,7 +317,7 @@ body {
 
 .join-now {
     padding: 10px 20px;
-    background-color: #F05A28; /* Bright orange */
+    background-color: #50c878; /* Bright orange */
     color: #FFFFFF;
     border: none;
     border-radius: 5px;
@@ -327,7 +327,7 @@ body {
 }
 
 .join-now:hover {
-    background-color: #D04A20; /* Darker orange on hover */
+    background-color: #98ff98; /* Darker orange on hover */
 }
 #about-us  {
     text-align: center;
@@ -360,34 +360,35 @@ body {
 }
 /* Main Section with Full-Width White Background */
 #our-services {
-    background-color: #FFFFFF; /* Full white background from this section */
+    background-color: #FFFFFF;
     padding: 50px 20px;
     text-align: center;
-    width: 100%; /* Ensure it spans the full width of the page */
-    box-sizing: border-box; /* Make padding included in the width */
+    width: 100%;
+    box-sizing: border-box;
+    
 }
 
 /* Headings and Subheadings */
 #our-services h2 {
-    color: #000000; /* Black color for "What" */
+    color: #000000;
     font-size: 2em;
-    font-weight: bold; /* Make the main heading bold */
+    font-weight: bold;
 }
 
 #our-services h2 span {
-    color: #AAAAAA; /* Blue-gray color for "We Do" */
-    font-weight: bold; /* Make "We Do" bold */
+    color: #AAAAAA;
+    font-weight: bold;
 }
 
 #our-services p {
     font-size: 1.2em;
-    color: #AAAAAA; /* Change paragraph color to white */
+    color: #AAAAAA;
     margin-bottom: 20px;
 }
 
 /* Button Styling */
 .learn-more-btn {
-    background-color: #F05A28; /* Bright orange button */
+    background-color: #F05A28;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -398,97 +399,91 @@ body {
 }
 
 .learn-more-btn:hover {
-    background-color: #D04A20; /* Darker orange on hover */
+    background-color: #D04A20;
 }
 
-/* Flexbox Styling for Service Boxes */
+/* Flexbox and Grid Styling for Service Boxes */
 .services-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping into multiple rows */
-    justify-content: space-between; /* Creates gaps between the service boxes */
-    align-items: flex-start; /* Aligns items to the top */
-    max-width: 700px; /* Max width for the container */
-    margin: 0 auto; /* Center the container */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
     text-align: center;
-    
-}
- /* img{
-    height: 100px;
-    width:100px;
-    
-} */
-.only-services img{
-    width:100%;
-   
+    /* margin-left: 10px; */
+    justify-content: center;
+    /* align-items: center; */
 }
 
 /* Service Box Styling */
 .service-box {
-    background-color: #1A1A1A; /* Dark charcoal gray */
-    border-radius: 10px; /* Rounded corners for the service box */
+    background-color: #1A1A1A;
+    border-radius: 10px;
     padding-bottom: 5px;
     color: #FFFFFF;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     text-align: center;
-
-    /* Flex item sizing */
-    flex: 0 1 48%; /* Two boxes per row with some margin */
-    margin-bottom: 15px; /* Space between rows */
 }
 
 /* Service Box Content */
 .service-box h3 {
-    color: white; /* White for main heading */
-    font-weight: bold; /* Make heading bold */
+    color: white;
+    font-weight: bold;
 }
 
 .service-box .tagline {
     font-style: italic;
-    color: #FFFFFF; /* Change tagline color to white */
-    font-weight: bold; /* Make tagline bold */
+    color: #FFFFFF;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .service-box .description {
-    color: #FFFFFF; /* White color for paragraph */
+    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
 /* Image Styling */
 .service-box img {
     padding-bottom: 10px;
-    /* width: 300px; */
-    height: 290px;
-    /* border-radius: 10px; */
-     /* Rounded corners for the image */
-    margin-top: 10px; /* Margin to separate from the content above */
-    margin-bottom: -20px; /* Pull the image down to align with the bottom of the box */
-    /* clip-path: circle(50%); */
+    height: 270px;
+    margin-top: 10px;
+    margin-bottom: -20px;
 }
 
-/* Learn More Button in Service Box */
-.learn-more-box {
-    background-color: #F05A28;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px; /* Add margin to separate from the image */
-}
-
-.learn-more-box:hover {
-    background-color: #D04A20;
-}
-
-/* Responsive Design for Service Boxes */
-@media (max-width: 768px) {
-    .service-box {
-        flex: 1 1 100%; /* Stack the boxes on smaller screens */
+/* Responsive Design for Tablets and Smaller Devices */
+@media (max-width: 1024px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 768px) {
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .service-box img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #our-services h2 {
+        font-size: 1.5em;
+    }
+
+    .service-box {
+        padding-bottom: 10px;
+    }
+
+    .service-box img {
+        height: 200px;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -564,12 +559,82 @@ ul {
     margin: 0;
     padding: 0;
 } */
+ /* testimonials */
+ 
+.testimonials-section {
+    padding: 50px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    width:100%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .client-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .client-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .client-role {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .testimonials-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
 
 .get-started-section {
-    padding: 50px 5px;
+    padding: 40px 10px;
     position: relative;
     text-align: center;
-    min-height: 50px; /* Adjusted height */
+    min-height: 100px; /* Adjusted height */
 }
 
 .main-heading {
@@ -600,15 +665,16 @@ ul {
 .btn:hover {
     background-color: darkorange; /* Darker shade on hover */
 }
-
+/* 
 .image-container {
-    margin-top: 30px; /* Spacing between heading and image */
-}
+    margin-top: 30px; */
+     /* Spacing between heading and image */
+/* } */
 
 .alt-image {
-    width: 100px; /* Adjust width as needed */
-/*     height: 100px;*/
-    /* Maintain aspect ratio */ 
+    width: 70px; /* Adjust width as needed */
+    /* height: 100px;  */
+    /* Maintain aspect ratio */
   
 }
 
@@ -663,7 +729,7 @@ ul {
     display: block;
     margin: 10px 0;
     padding: 10px 20px;
-    background-color: #FF4500;
+    background-color: #003366;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -672,7 +738,7 @@ ul {
 }
 
 .try-button:hover {
-    background-color: #ff5733;
+    background-color: #98ff98;
 }
 
 .open-positions {
@@ -739,5 +805,8 @@ i{
 
     .footer-logo {
         font-size: 1.5em;
+    }
+    .footer-bottom{
+        align-items: center;
     }
 }
