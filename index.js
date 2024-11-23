@@ -13,7 +13,6 @@ navLinks.forEach(link => {
 });
 
 
-
 const menuToggle = document.getElementById('menu-toggle');
 const sidebar = document.getElementById('sidebar');
 const closeSidebarBtn = document.getElementById('close-sidebar');
@@ -42,3 +41,44 @@ document.addEventListener('click', (e) => {
         sidebar.classList.remove('show');
     }
 });
+
+// testimonials
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+    const testimonials = [
+      {
+        text: "The team was fantastic! Their expertise and dedication really impressed me.",
+        name: "John Doe",
+        role: "CEO, Example Inc.",
+        photo: "https://via.placeholder.com/80"
+      },
+      {
+        text: "Exceptional service and attention to detail. I couldn't be happier!",
+        name: "Jane Smith",
+        role: "Founder, Startup X",
+        photo: "https://via.placeholder.com/80"
+      },
+      {
+        text: "Highly professional and reliable. Delivered everything on time!",
+        name: "Mike Wilson",
+        role: "Manager, TechWorld",
+        photo: "https://via.placeholder.com/80"
+      }
+    ];
+  
+    let currentTestimonialIndex = 0;
+  
+    const updateTestimonial = () => {
+      const card = document.querySelector(".testimonial-card");
+      const { text, name, role, photo } = testimonials[currentTestimonialIndex];
+      card.querySelector(".testimonial-text").textContent = `"${text}"`;
+      card.querySelector(".client-name").textContent = name;
+      card.querySelector(".client-role").textContent = role;
+      card.querySelector(".client-photo").src = photo;
+  
+      currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+    };
+  
+    setInterval(updateTestimonial, 5000); // Rotate testimonials every 5 seconds
+  });
+  
