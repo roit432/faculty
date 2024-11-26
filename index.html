@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+    <!--pop up msg-->
+    <section class="poo">
+        <!-- <div class="main-content">
+          <h1>Welcome to AKTU Dashboard</h1>
+          <button id="registerButton">Click Here to Register</button>
+        </div>-->
+       
+      
+        <!-- Popup Container -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+              <span class="close-icon" id="closePopup">&times;</span>
+              <img src="popup.jpeg" alt="Popup Document" class="popup-image">
+              <a href="https://forms.gle/TRFBvZJzjz5A6n9v9"><button id="registerNow">Register Now</button></a>
+              
+            </div>
+          </div>
+      </section>
     <header>
         <div class="header-left">
             <img src="Faculty paths banner.jpg" alt="Logo" class="logo">
@@ -25,7 +43,7 @@
                 <li><a href="#">Benefits</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="#">Join Now</a></li>
-                <li><a href="#" class="subscription-button">Subscription Plan</a></li>
+                <li><a href="#" class="subscription-button">Courses</a></li>
             </ul>
             <div class="menu-toggle" id="menu-toggle">
                 <span></span>
@@ -248,29 +266,73 @@ We carefully vet all mentors to ensure they bring both subject expertise and val
         </div>          
     </section>-->
       
-
+     
     <section class="testimonials-section">
         <h1 class="title">What Our Clients Say</h1>
-        <div class="testimonials-container">
-          <div class="testimonial-card">
-            <img src="https://via.placeholder.com/80" alt="Client 1" class="client-photo">
-            <p class="testimonial-text">"The team was fantastic! Their expertise and dedication really impressed me."</p>
-            <h3 class="client-name">John Doe</h3>
-            <p class="client-role">CEO, Example Inc.</p>
-          </div>
-    
-          <div class="testimonial-card">
-            <img src="https://via.placeholder.com/80" alt="Client 2" class="client-photo">
-            <p class="testimonial-text">"Exceptional service and attention to detail. I couldn't be happier!"</p>
-            <h3 class="client-name">Jane Smith</h3>
-            <p class="client-role">Founder, Startup X</p>
-          </div>
-    
-          <div class="testimonial-card">
-            <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
-            <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
-            <h3 class="client-name">Mike Wilson</h3>
-            <p class="client-role">Manager, TechWorld</p>
+        <div class="marquee-wrapper">
+          <div class="marquee">
+            <!-- Testimonial Cards -->
+            <div class="testimonial-card">
+              <img src="https://via.placeholder.com/80" alt="Client 1" class="client-photo">
+              <p class="testimonial-text">"The team was fantastic! Their expertise and dedication really impressed me."</p>
+              <h3 class="client-name">John Doe</h3>
+              <p class="client-role">CEO, Example Inc.</p>
+            </div>
+            <div class="testimonial-card">
+              <img src="https://via.placeholder.com/80" alt="Client 2" class="client-photo">
+              <p class="testimonial-text">"Exceptional service and attention to detail. I couldn't be happier!"</p>
+              <h3 class="client-name">Jane Smith</h3>
+              <p class="client-role">Founder, Startup X</p>
+            </div>
+            <div class="testimonial-card">
+              <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+              <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+              <h3 class="client-name">Mike Wilson</h3>
+              <p class="client-role">Manager, TechWorld</p>
+            </div>
+            <!-- Repeat more testimonial cards as needed -->
+            <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
+              <div class="testimonial-card">
+                <img src="https://via.placeholder.com/80" alt="Client 3" class="client-photo">
+                <p class="testimonial-text">"Highly professional and reliable. Delivered everything on time!"</p>
+                <h3 class="client-name">Mike Wilson</h3>
+                <p class="client-role">Manager, TechWorld</p>
+              </div>
           </div>
         </div>
       </section>
