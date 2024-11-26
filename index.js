@@ -112,3 +112,11 @@ document.addEventListener("DOMContentLoaded", () => {
   //    alert('You clicked Register Now!');
   //    popup.style.display = 'none';
   //  });
+ document.addEventListener('click', (event) => {
+    // Check if the click is outside the popup content
+    const isOutsidePopup = !popup.querySelector('.popup-content').contains(event.target);
+
+    if (isOutsidePopup) {
+        popup.style.display = 'none'; // Hide the popup
+    }
+});
