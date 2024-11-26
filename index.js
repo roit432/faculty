@@ -82,3 +82,33 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTestimonial, 5000); // Rotate testimonials every 5 seconds
   });
   
+
+  
+  //pop up 
+  // DOM Elements
+   // const registerButton = document.getElementById('registerButton');
+   const popup = document.getElementById('popup');
+   const closePopup = document.getElementById('closePopup');
+   const registerNow = document.getElementById('registerNow');
+   
+   // Open Popup
+  // registerButton.addEventListener('click', () => {
+    // popup.style.display = 'flex';
+   //});
+    // Show Popup Automatically on Page Load
+    document.addEventListener('DOMContentLoaded', () => {
+ setTimeout(() => {
+   popup.style.display = 'flex';
+ }, 1000); // Popup appears after 3 seconds
+});
+
+   // Close Popup
+   closePopup.addEventListener('click', () => {
+     popup.style.display = 'none';
+   });
+   
+   // Register Now Button
+  //  registerNow.addEventListener('click', () => {
+  //    alert('You clicked Register Now!');
+  //    popup.style.display = 'none';
+  //  });
