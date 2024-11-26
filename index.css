@@ -560,15 +560,15 @@ ul {
     padding: 0;
 } */
  /* testimonials */
- 
+  /* General Section Styling */
 .testimonials-section {
     padding: 50px 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
     background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
-    width:100%;
+    font-family: Arial, sans-serif;
+    width:90%;
+    overflow: hidden;
+    width: 100%; /* Ensure the section spans full width */
   }
   
   .title {
@@ -577,20 +577,34 @@ ul {
     color: #333;
   }
   
-  .testimonials-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
+  /* Marquee Wrapper */
+  .marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    max-width: 1200px; /* Center and limit width for larger screens */
     margin: 0 auto;
   }
   
+  /* Marquee Animation */
+  .marquee {
+    display: flex; /* Use flexbox for alignment */
+    animation: scroll 15s linear infinite; /* Continuous scrolling */
+    gap: 20px; /* Space between testimonial cards */
+    flex-wrap: nowrap; /* Prevent wrapping */
+  }
+  
+  /* Testimonial Card Styling */
   .testimonial-card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    width: 90%; /* Flexible width for responsiveness */
+    max-width: 300px; /* Limit width for consistency */
+    text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0; /* Prevent cards from shrinking */
   }
   
   .testimonial-card:hover {
@@ -609,6 +623,7 @@ ul {
     font-style: italic;
     color: #555;
     margin-bottom: 20px;
+    word-wrap: break-word;
   }
   
   .client-name {
@@ -622,15 +637,69 @@ ul {
     color: #888;
   }
   
-  /* Responsive */
+  /* Keyframe Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .marquee {
+      gap: 15px;
+      animation: scroll 18s linear infinite;
+    }
+  
+    .testimonial-card {
+      width: 80%; /* Adjust width for smaller screens */
+      max-width: 250px;
+    }
+  }
+  
   @media (max-width: 768px) {
-    .testimonials-container {
-      grid-template-columns: 1fr;
+    .marquee {
+      gap: 10px;
+      animation: scroll 20s linear infinite; /* Adjust animation speed */
+    }
+  
+    .testimonial-card {
+      width: 75%; /* Further reduce card size */
+      max-width: 220px;
+    }
+  
+    .client-photo {
+      width: 70px;
+      height: 70px; /* Scale down photos */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .marquee {
+      gap: 5px;
+      animation: scroll 25s linear infinite; /* Slow animation for readability */
+    }
+  
+    .testimonial-card {
+      width: 70%; /* Smallest width for mobile */
+      max-width: 200px;
+    }
+  
+    .client-photo {
+      width: 60px;
+      height: 60px; /* Smaller photos for mobile */
+    }
+  
+    .title {
+      font-size: 1.5rem; /* Adjust title size */
     }
   }
   
 
-.get-started-section {
+  .get-started-section {
     padding: 40px 10px;
     position: relative;
     text-align: center;
@@ -810,3 +879,105 @@ i{
         align-items: center;
     }
 }
+/* pop up msg */
+ /* Popup Styling */
+ 
+.popup {
+    display: none; /* Initially hidden */
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.6); /* Dim background overlay */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background: #fff;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close-icon:hover {
+    color: #d32f2f;
+  }
+  
+  .popup-content img {
+    width: 100%; /* Ensure the image scales with the container */
+    max-width: 350px; /* Prevent it from growing too large */
+    height: auto; /* Maintain aspect ratio */
+    
+    border-radius: 5px;
+    margin-bottom: 20px;
+    object-fit: cover; /* Ensures clean cropping if necessary */
+  }
+  
+  .popup-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-content button:hover {
+    background-color: green;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .popup-content {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .popup-content img {
+      max-width: 300px; /* Adjust image size for tablets */
+      max-height: 300px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .popup-content {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .popup-content img {
+      max-width: 250px; /* Smaller image for mobile screens */
+      max-height: 250px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
